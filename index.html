@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head><title>Temp</title></head>
-<body>Hello</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaze Web Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="grid">
+        <img src="food.png" alt="Food" class="grid-img" data-label="Food">
+        <img src="pet.png" alt="Pet" class="grid-img" data-label="Pet">
+        <img src="opera.png" alt="Opera" class="grid-img" data-label="Opera">
+        <img src="tech.png" alt="Tech" class="grid-img" data-label="Tech">
+    </div>
+    <img src="close.png" id="close-btn" alt="Close" onclick="window.close()">
+    <video id="video-player" controls autoplay hidden>
+        <source src="opera.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script src="script.js"></script>
+</body>
 </html>
